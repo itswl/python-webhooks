@@ -32,7 +32,7 @@ services:
       DATABASE_URL: "postgresql://webhook_user:WbP9mA7X2rLQ4E@postgres:5432/webhooks"
 
     volumes:
-      # - ./.env:/app/.env # 挂载 .env 文件 
+      - ./.env:/app/.env # 挂载 .env 文件 
       - ./logs:/app/logs
       - ./webhooks_data:/app/webhooks_data
 
